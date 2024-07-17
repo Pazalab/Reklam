@@ -1,42 +1,100 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-shadow: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+:root{
+     --regular-font: "Outfit", sans-serif;
+     --bold-font: "Archivo", sans-serif;
+     --main-color: #f7901E;
+     --secondary-color: #004250;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+      background: #fffaf5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+body,
+input,
+textarea,
+button{
+     font-family: var(--regular-font);
 }
 
-.card {
-  padding: 2em;
+ul{
+     list-style: none;
 }
 
-.read-the-docs {
-  color: #888;
+a{
+     text-decoration: none;
 }
+
+img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+/* Utils */
+.inner-row{
+     width: 1280px;
+     margin: auto;
+}
+
+.logo{
+     width: 200px;
+     display: block;
+}
+
+.header-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.header-content ul{
+     display: flex;
+     gap: 50px;
+}
+.header-content ul li a{
+      cursor: pointer;
+      position: relative;
+      display: inline-flex;
+      padding-bottom: 10px;
+}
+.header-content ul li a:hover,
+.header-content ul li a.active{
+     color: var(--main-color);
+
+}
+
+.header-content ul li a::after{
+      content: "";
+      width: 100%;
+      height: 0px;
+      background: var(--main-color);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+}
+.header-content ul li a:hover::after,
+.header-content ul li a.active::after{
+      height: 2px;
+}
+.header-action a{
+     width: 200px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 55px;
+     color: whitesmoke;
+     background: var(--main-color);
+}
+
