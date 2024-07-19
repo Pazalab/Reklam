@@ -37,6 +37,16 @@ img{
      object-fit: cover;
 }
 
+::-webkit-scrollbar {
+     width: 6px;
+}
+::-webkit-scrollbar-track {
+     background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+     background:var(--secondary-color);
+}
+
 /* Utils */
 .inner-row{
      width: 1280px;
