@@ -99,11 +99,11 @@ img{
       height: 2px;
 }
 .header-action a{
-     width: 200px;
+     width: 180px;
      display: flex;
      align-items: center;
      justify-content: center;
-     height: 55px;
+     height: 50px;
      color: whitesmoke;
      background: var(--main-color);
 }

@@ -3,6 +3,7 @@
        background: url("../assets/banner.png") no-repeat;
        background-size: cover;
        background-position:auto;
+       padding-bottom: 50px;
 }
 
 .hero-section{
@@ -70,4 +71,19 @@
 }
 .hero-section a:hover::after{
        background: var(--main-color);
+}
+
+.hero-image{
+        width: 400px;
+        height: 220px;
+        transform: translate(70%, -40px);
+        -webkit-transform: translate(70%, -40px);
+        -moz-transform: translate(70%, -40px);
+        -ms-transform: translate(70%, -40px);
+        -o-transform: translate(70%, -40px);
+}
+
+
+.about-section{
+       padding: 100px 0;
 }
