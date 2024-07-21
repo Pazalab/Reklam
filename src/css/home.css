@@ -87,3 +87,81 @@
 .about-section{
        padding: 100px 0;
 }
+
+.about-intro h3{
+       font-weight: 400;
+       font-size: 24px;
+       margin-bottom: 10px;
+}
+
+.about-intro h1{
+          font-size: 85px;
+          font-family: var(--bold-font);
+          font-weight: 500;
+          line-height: 1.2;
+          width: 90%;
+}
+.about-intro h1 span{
+       background-color: transparent;
+       background-image: linear-gradient(235deg, rgb(255, 228, 165) 0%, #F08912 100%);
+       background-clip: text;
+       -webkit-text-fill-color: transparent;
+       color: var(--main-color);
+       font-weight: 600;
+}
+
+.about-description{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        margin: 20px 0;
+}
+
+.about-description h3{
+         line-height: 1.6;
+         font-size: 40px;
+         font-weight: 400;
+         margin-bottom: 20px;
+}
+.about-description h3 span{
+        font-weight: 600;
+        font-size: 45px;
+}
+
+.about-description-texts p{
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.7;
+        color: rgb(50, 50, 50);
+}
+
+.numbers-row{
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      width: 950px;
+      margin: 30px auto 0px auto;
+      gap: 40px;
+      border-top: 1px solid rgba(211, 206, 183, 0.488);
+      padding: 50px 30px 0px 30px;
+}
+
+.number-moja{
+        border-right: 1px solid rgba(220, 220, 220, 0.485);
+        padding-left: 8%;
+}
+.number-moja:last-child{
+        border-right: 0;
+}
+
+.number-moja h1{
+        font-size: 75px;
+        font-weight: 400;}
+
+.number-moja h1 sup{
+        font-size: 20px;
+}
+.number-moja p{
+       font-size: 18px;
+       font-weight:300;
+}
