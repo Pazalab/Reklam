@@ -4,8 +4,9 @@ import { services } from "../data/services";
 import process1 from "../../assets/process1.jpg";
 import process2 from "../../assets/process2.jpg";
 import Benefits from "./Benefits";
+
 const ServicesSection = () => {
-    const [active, setActive] = useState(1);
+    const [active, setActive] = useState(0);
 
     const openService = (i) =>{
          setActive(i)
