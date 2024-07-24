@@ -8,12 +8,12 @@ const ContactSection = () => {
                                        <ContactForm />
                                        <div className="contact-texts">
                                                     <div className="contact-text-column">
-                                                               <h2>Get in Touch</h2>
-                                                               <p>We&apos;re here to listen. Got questions, comments, or feedback? Don&apos;t hesitate to reach out. Simply fill out the form on the side, and we&apos;ll get back to you swiftly.</p>
+                                                               <h2 data-aos="zoom-in-left">Get in Touch</h2>
+                                                               <p data-aos="zoom-in-up">We&apos;re here to listen. Got questions, comments, or feedback? Don&apos;t hesitate to reach out. Simply fill out the form and we&apos;ll get back to you swiftly.</p>
                                                     </div>
                                                     <div className="contact-text-column">
-                                                                <p>Phone: +254 700 209805</p>
-                                                                <p>Email: helllo@reklamsolutions.com</p>
+                                                                <p data-aos="zoom-in-left">Phone: +254 700 209805</p>
+                                                                <p data-aos="zoom-in-left">Email: helllo@reklamsolutions.com</p>
                                                     </div>
                                        </div>
                           </div>

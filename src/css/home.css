@@ -207,7 +207,7 @@
          grid-template-columns: 200px 3.5fr 2fr auto;
          border-top: 1px solid gainsboro;
          gap: 40px;
-         padding:40px 30px 40px 0px;
+         padding:40px 30px 40px 30px;
 }
 .service-row-moja:first-child{
         border-top: 0;
@@ -224,6 +224,7 @@
 }
 .service-row-moja .icon img{
         filter: invert(17%) sepia(26%) saturate(3720%) hue-rotate(160deg) brightness(99%) contrast(103%);
+        -webkit-filter: invert(17%) sepia(26%) saturate(3720%) hue-rotate(160deg) brightness(99%) contrast(103%);
 }
 .service-row-moja h3{
         font-size: 34px;
@@ -259,7 +260,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid gainsboro;
         font-size: 25px;
         cursor: pointer;
         color: var(--secondary-color);
@@ -559,7 +559,6 @@
  }
 
  .contact-section{
-         height: 100vh;
          background: var(--secondary-color);
          position: relative;
          z-index: 10;
@@ -632,4 +631,248 @@
         width: 90%;;
         line-height: 1.7;
         color: gainsboro;
+ }
+
+
+ @media(max-width: 1280px){
+         .hero-explanation{
+                  margin-top: 0px;
+         }
+         .hero-image{
+                 width: 320px;
+                 height: 180px;
+                 transform: translate(75%, -10px);
+                 -webkit-transform: translate(75%, -10px);
+                 -moz-transform: translate(75%, -10px);
+                 -ms-transform: translate(75%, -10px);
+                 -o-transform: translate(75%, -10px);
+       }
+       .about-intro h1{
+             width: 100%;
+       }
+ }
+
+ @media(max-width: 1090px){
+         .landing{
+                 height: auto;
+         }
+         .hero-explanation p{
+                  justify-content: center;
+                  width: 80%;
+                  text-align: center;
+                  margin: 10px auto;
+         }
+         .hero-section h1{
+                  font-size: 85px;
+                  text-align: center;
+         }
+         .hero-image{
+                 transform: translate(0);
+                 -webkit-transform: translate(0);
+                 -moz-transform: translate(0);
+                 -ms-transform: translate(0);
+                 -o-transform: translate(0);
+                 width: 60%;
+                 margin: 30px auto;
+                 height: 350px;
+       }
+
+       .hero-section .hero-action{
+             margin: 30px 0px 20px 0px;
+             display: flex;
+             justify-content: center;
+       }
+       
+       .about-intro h1,
+       .services-intro h1{
+               font-size: 65px;
+       }
+       .about-description{
+               grid-template-columns: 0.5fr 2.5fr;
+       }
+       .numbers-row,
+       .services-intro,
+       .benefits-intro,
+       .testimonial-intro,
+       .action-wrapper-texts{
+            width: 90%;
+       }
+       .service-row-moja.active{
+               grid-template-columns: 1fr;
+               gap: 10px;
+               padding:40px 30px 40px 30px;
+       }
+       .service-row-moja .icon{
+             margin: 0;
+       }
+       .process-specifics-row,
+       .benefit-reasons-wrapper{
+              grid-template-columns: 1fr;
+              gap: 30px;
+       }
+       .benefit-image{
+             height: 550px;
+       }
+
+       .benefits-intro h1,
+       .services-intro h1,
+       .process-texts h1,
+       .testimonial-intro h2{
+             font-size: 50px;
+       }
+
+       .action-wrapper-texts h1{
+          font-size: 90px;
+       }
+       .contact-section-content{
+              grid-template-columns: 1fr;
+              gap: 30px;
+       }
+      .contact-texts{
+            gap: 20px;
+      }
+       .contact-form{
+            order: 2;
+       }
+ }
+
+ @media(max-width: 768px){
+            .hero-section h1{
+                 font-size: 60px;
+            }
+            .hero-image{
+                width: 100%;
+            }
+
+            .about-intro h1,
+            .contact-texts h2{
+                   font-size: 50px;
+                   line-height: 1.5;
+            }
+            .about-description h3{
+                  font-size: 30px;
+            }
+            .about-description h3 span{
+                   font-size: 35px;
+            }
+
+            .numbers-row{
+                   grid-template-columns: 1fr 1fr;
+            }
+            .number-moja:nth-child(2){
+                  border: 0;
+            }
+            .number-moja h1{
+                   font-size: 60px;
+            }
+            .service-row-moja{
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+            }
+            .service-row-moja span{
+                display: none;
+                   height: max-content;
+            }
+            .services-intro h1,
+            .benefits-intro h1,
+            .process-texts h1,
+            .testimonial-intro h2{
+                   font-size: 40px;
+            }
+            .services-intro p,
+            .process-texts h1{
+                width: 100%;
+            }
+            .service-row-moja h3{
+                   font-size: 26px;;
+            }
+            .process-number::after{
+                   top: 50px;
+                   height: 180px;
+            }
+            .reasons-wrap-row,
+            .form-row.split{
+                grid-template-columns: 1fr;
+                order: 1;
+            }
+            .benefit-image{
+                     order: 2;
+            }
+            .process-texts h3,
+            .process-texts h1{
+                  text-align: center;
+            }
+            .partner-row h3{
+                     font-size: 25px;
+            }
+            .testimonial-moja{
+                   width: 300px;
+            }
+
+            .action-wrapper-texts h1{
+                     font-size: 70px;
+            }
+ }
+
+ @media(max-width: 530px){
+         .hero-section h1{
+                font-size: 45px;
+                line-height: 1.3;
+         }
+         .about-intro h1,
+         .contact-texts h2{
+                 font-size: 35px;
+         }
+         .hero-explanation p{
+                width: 100%;
+                font-size: 18px;
+         }
+       .about-description{
+             grid-template-columns: 1fr;
+       }
+       .about-description h3{
+             font-size: 25px;
+       }
+       .about-description h3 span{
+             font-size: 35px;
+       }
+       .numbers-row{
+             grid-template-columns: 1fr;
+       }
+       .number-moja{
+             border: 0;
+             padding: 0;
+
+       }
+       .process-number span{
+             font-size: 28px;
+       }
+       .process-moja-texts h4{
+                font-size: 20px;
+        }
+        .process-moja-texts p,
+        .contact-texts p{
+             font-size: 16px;
+        }
+        .process-number::after{
+              height: 220px;
+        }
+        .action-wrapper-texts h1{
+                 font-size: 50px;
+        }
+ }
+
+
+ @media(max-width: 320px){
+           .hero-section h1{
+                   font-size: 36px;
+           }
+           .action-wrapper-texts h1{
+                  font-size: 40px;
+                  line-height: 1.5;
+                  font-weight: 600;
+           }
+           .process-number::after{
+                height: 270px;
+          }
  }

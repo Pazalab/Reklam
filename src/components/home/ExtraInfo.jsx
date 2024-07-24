@@ -24,23 +24,23 @@ const ExtraInfo = () => {
                 <div className="inner-row">
                              <div className="extra-info-content">
                                        <div className="partner-row">
-                                                   <h3>200+ Big brands trust us</h3>
+                                                   <h3 data-aos="zoom-in-down">200+ Big brands trust us</h3>
                                                    <div className="partner-row-content">
-                                                               <img src={partner1} alt="" />
-                                                               <img src={partner2} alt="" />
-                                                               <img src={partner3} alt="" />
-                                                               <img src={partner4} alt="" />
-                                                               <img src={partner5} alt="" />
-                                                               <img src={partner6} alt="" />
+                                                               <img data-aos="zoom-in-up" src={partner1} alt="" />
+                                                               <img data-aos="zoom-in-up" src={partner2} alt="" />
+                                                               <img data-aos="zoom-in-up" src={partner3} alt="" />
+                                                               <img data-aos="zoom-in-up" src={partner4} alt="" />
+                                                               <img data-aos="zoom-in-up" src={partner5} alt="" />
+                                                               <img data-aos="zoom-in-up" src={partner6} alt="" />
                                                    </div>
                                        </div>
 
                                        <div className="testimonials-row">
                                                <div className="testimonial-intro">
-                                                        <h2>Read what our <span>Customers</span> are saying about us.</h2>
-                                                        <p>Whether you are a small startup or a multinational corporation, let us be your trusted advisor on the path to success.</p>
+                                                        <h2 data-aos="zoom-in-up">Read what our <span>Customers</span> are saying about us.</h2>
+                                                        <p data-aos="zoom-in-up">Whether you are a small startup or a multinational corporation, let us be your trusted advisor on the path to success.</p>
                                                </div>
-                                               <div ref={scrollerRef} className="testimonial-wrapper">
+                                               <div data-aos="zoom-in-up" ref={scrollerRef} className="testimonial-wrapper">
                                                           <div className="testimonials-scroller">
                                                                  { testimonials.map(item => 
                                                                      <div className="testimonial-moja" key={item.id}>

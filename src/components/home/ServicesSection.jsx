@@ -12,15 +12,15 @@ const ServicesSection = () => {
          setActive(i)
     }
   return (
-    <div className="services-section">
+    <div id="services" className="services-section">
               <div className="inner-row">
                         <div className="services-intro">
-                                     <h3>Our Services</h3>
-                                     <h1>What We Can Do for You</h1>
-                                     <p>Reklam is not just a digital marketing agency; we&apos;re your catalyst for growth. With expertise in five key areas, we empower businesses like yours to soar in the digital landscape and become an industry powerhouse.</p>
+                                     <h3 data-aos="zoom-in-down">Our Services</h3>
+                                     <h1 data-aos="zoom-in-up">What We Can Do for You</h1>
+                                     <p data-aos="zoom-in-up">Reklam is not just a digital marketing agency; we&apos;re your catalyst for growth. With expertise in five key areas, we empower businesses like yours to soar in the digital landscape and become an industry powerhouse.</p>
                         </div>
 
-                        <div className="services-row">
+                        <div className="services-row" data-aos="zoom-in-up">
                                 { services.map(item => 
                                   <div onClick={() => openService(item.id)} className={item.id === active ? "service-row-moja active" : "service-row-moja"} key={item.id}>
                                            <div className="icon">
@@ -37,11 +37,11 @@ const ServicesSection = () => {
 
                         <div className="process-row">
                                   <div className="process-texts">
-                                           <h3>How We Serve</h3>
-                                           <h1>We have designed a <span>Collaborative Journey </span> that ignites <span>Your Brand</span> and propels you to your Goals.</h1>
+                                           <h3 data-aos="zoom-in-down">How We Serve</h3>
+                                           <h1 data-aos="zoom-in-up">We have designed a <span>Collaborative Journey </span> that ignites <span>Your Brand</span> and propels you to your Goals.</h1>
 
                                            <div className="process-specifics-row">
-                                                    <div className="process-specific-column">
+                                                    <div className="process-specific-column" data-aos="zoom-in-right">
                                                                  <div className="process-moja">
                                                                              <div className="process-number">
                                                                                        <span>01</span>
@@ -80,8 +80,8 @@ const ServicesSection = () => {
                                                                  </div>
                                                     </div>
                                                     <div className="process-images">
-                                                              <img src={process1} alt="" />
-                                                              <img src={process2} alt="" />
+                                                              <img data-aos="zoom-in-left" src={process1} alt="" />
+                                                              <img data-aos="zoom-in-left" src={process2} alt="" />
                                                     </div>
                                            </div>
                                   </div>

@@ -1,7 +1,7 @@
 
 const ContactForm = () => {
   return (
-    <div className="contact-form">
+    <div className="contact-form" data-aos="zoom-in-right">
                <form action="">
                           <div className="form-row split">
                                      <div className="form-column">

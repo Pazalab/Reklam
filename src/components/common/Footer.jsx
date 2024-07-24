@@ -1,5 +1,5 @@
 import { Link } from "react-scroll"
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo2.png"
 import { NavLink } from "react-router-dom"
 const Footer = () => {
   return (
@@ -21,7 +21,6 @@ const Footer = () => {
                                                                    <li><Link to="hero" offset={-100} smooth={true} >Home</Link></li>
                                                                     <li><Link to='about'  smooth={true}>About Us</Link></li>
                                                                     <li><Link to='services'  smooth={true}>Services</Link></li>
-                                                                  <li><Link to='contact'   smooth={true}>Contact Us</Link></li>
                                                          </ul>
                                                </div>
                                                <div className="footer-detail">
@@ -32,8 +31,8 @@ const Footer = () => {
                                                                    <li><NavLink to={"/"} target="_blank">LinkedIn</NavLink></li>
                                                            </ul>
                                                </div>
-                                               <div className="footer-detail">
-                                                        <p>All rights reserved &copy;{ new Date().getFullYear() } Reklam Solutions Limited</p>
+                                               <div className="footer-detail copyright">
+                                                        <p>&copy;{ new Date().getFullYear() } Reklam Solutions Limited</p>
                                                </div>
                                    </div>
                         </div>
