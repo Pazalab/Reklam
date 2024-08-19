@@ -7,13 +7,13 @@ const AboutSection = () => {
                         <div className="about-section-content">
                                    <div className="about-intro">
                                              <h3 data-aos='zoom-in-down'>About Reklam</h3>
-                                             <h1 data-aos="zoom-in-up">Elevate <span>Your Brand</span>. Amplify <span>Your Impact</span>. We&apos;re your Premier Marketing Agency.</h1>
+                                             <h1 data-aos="zoom-in-up">Elevate <span>Your Brand</span>. Amplify <span>Your Impact</span>.We are Your Premier Consulting Partner.</h1>
                                    </div>
                                    <div className="about-description">
                                               <div className="about-column-empty"></div>
                                               <div className="about-description-texts">
                                                            <h3 data-aos='zoom-in-left'>We use <span>Design</span>, <span>Technology</span>, and <span>marketing</span> to shape Digital Brand Experiences that propel your success in the digital realm.</h3>
-                                                           <p data-aos="zoom-in-left">At Reklam Solutions, we&apos;e your trusted partner in digital transformation, empowering every step of your journey. Whether you&apos;re a budding startup, a seasoned corporation seeking optimization, a government entity driving change, or an NGO amplifying impact, we walk alongside you. </p>
+                                                           <p data-aos="zoom-in-left">At Reklam Solutions, We are a boutique, modern consultancy committed to transforming visions into reality. With a dynamic team of creative thinkers, strategic planners, and digital innovators, we blend artistry and strategy to deliver bespoke solutions for businesses and international development partners alike. Our passion for excellence and dedication to client success drive us to go above and beyond, ensuring each project we undertake is a masterpiece in its own right.</p>
                                                            <p data-aos='zoom-in-left'>Our passionate experts leverage cutting-edge technology to fuel your unique journey. We believe in transparency and relentless dedication – your success is our greatest reward.</p>
                                               </div>
                                    </div>

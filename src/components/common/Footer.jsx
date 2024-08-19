@@ -12,7 +12,7 @@ const Footer = () => {
 
                                    <div className="footer-grid">
                                                <div className="footer-detail">
-                                                          <p>6391 Elgin St.Celina, Delaware 102299</p>
+                                                          <p>Lvl 7, Le’Mac, 7th Floor, Westlands</p>
                                                           <p>Call us: +254 700 209805</p>
                                                           <p>Email us: hello@reklamsolutions.com</p>
                                                </div>
@@ -25,10 +25,10 @@ const Footer = () => {
                                                </div>
                                                <div className="footer-detail">
                                                            <ul>
-                                                                   <li><NavLink to={"/"} target="_blank">Instagram</NavLink></li>
+                                                                   {/* <li><NavLink to={"/"} target="_blank">Instagram</NavLink></li>
                                                                    <li><NavLink to={"/"} target="_blank">Facebook</NavLink></li>
-                                                                   <li><NavLink to={"/"} target="_blank">Twitter</NavLink></li>
-                                                                   <li><NavLink to={"/"} target="_blank">LinkedIn</NavLink></li>
+                                                                   <li><NavLink to={"/"} target="_blank">Twitter</NavLink></li> */}
+                                                                   <li><NavLink to={"https://www.linkedin.com/company/reklam-solutions/"} target="_blank">LinkedIn</NavLink></li>
                                                            </ul>
                                                </div>
                                                <div className="footer-detail copyright">

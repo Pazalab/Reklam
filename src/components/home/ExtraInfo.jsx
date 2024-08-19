@@ -3,7 +3,12 @@ import partner2 from "../../assets/ESRI.png"
 import partner3 from "../../assets/UNFPA.png"
 import partner4 from "../../assets/JTI.png"
 import partner5 from "../../assets/sahara-ventures.png"
-import partner6 from "../../assets/jack-daniels.png"
+import partner6 from "../../assets/jack-daniels.png";
+import partner7 from "../../assets/mzazi.png"
+import partner8 from "../../assets/ccpit.png"
+import partner9 from "../../assets/sg.png"
+import partner10 from "../../assets/restore-renew.png"
+import partner11 from "../../assets/baberia.jpeg"
 import { MdOutlineStarPurple500,  MdOutlineStarHalf } from "react-icons/md";
 import { testimonials } from "../data/testimonials"
 import { useRef, useEffect } from "react"
@@ -32,6 +37,11 @@ const ExtraInfo = () => {
                                                                <img data-aos="zoom-in-up" src={partner4} alt="" />
                                                                <img data-aos="zoom-in-up" src={partner5} alt="" />
                                                                <img data-aos="zoom-in-up" src={partner6} alt="" />
+                                                               <img data-aos="zoom-in-up" src={partner7} alt="" />
+                                                               <img data-aos="zoom-in-up" src={partner8} alt="" />
+                                                               <img data-aos="zoom-in-up" src={partner9} alt="" />
+                                                               <img data-aos="zoom-in-up" src={partner10} alt="" />
+                                                               <img data-aos="zoom-in-up" src={partner11} alt="" />
                                                    </div>
                                        </div>
 

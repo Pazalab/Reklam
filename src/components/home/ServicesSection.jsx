@@ -4,10 +4,11 @@ import { services } from "../data/services";
 import process1 from "../../assets/process1.jpg";
 import process2 from "../../assets/process2.jpg";
 import Benefits from "./Benefits";
+import { services2 } from "../data/services2";
 
 const ServicesSection = () => {
     const [active, setActive] = useState(0);
-
+   const [switchService, setSwitchService] = useState(0)
     const openService = (i) =>{
          setActive(i)
     }
@@ -17,9 +18,17 @@ const ServicesSection = () => {
                         <div className="services-intro">
                                      <h3 data-aos="zoom-in-down">Our Services</h3>
                                      <h1 data-aos="zoom-in-up">What We Can Do for You</h1>
-                                     <p data-aos="zoom-in-up">Reklam is not just a digital marketing agency; we&apos;re your catalyst for growth. With expertise in five key areas, we empower businesses like yours to soar in the digital landscape and become an industry powerhouse.</p>
+                                     <p data-aos="zoom-in-up">Reklam is more than a digital marketing agency—we&apos;re your catalyst for growth. We craft impactful solutions that elevate brands and drive meaningful change through web design, digital consulting, strategic communication, and content creation. Our tailored services for SMEs, corporates, and international partners ensure optimal results and lasting impact. </p>
                         </div>
 
+                        <div className="services-switches">
+                               <ul>
+                                        <li onClick={() => setSwitchService(0)} className={switchService === 0 ? "active" : ''}>Corporate Clients and SMEs</li>
+                                        <li onClick={() => setSwitchService(1)} className={ switchService === 1 ? "active" : ""}>International Development Partners</li>
+                               </ul>
+                        </div>
+
+                        { switchService === 0 ?
                         <div className="services-row" data-aos="zoom-in-up">
                                 { services.map(item => 
                                   <div onClick={() => openService(item.id)} className={item.id === active ? "service-row-moja active" : "service-row-moja"} key={item.id}>
@@ -34,6 +43,22 @@ const ServicesSection = () => {
                                   </div>
                                 )}
                         </div>
+                           :
+                           <div className="services-row" data-aos="zoom-in-up">
+                           { services2.map(item => 
+                             <div onClick={() => openService(item.id)} className={item.id === active ? "service-row-moja active" : "service-row-moja"} key={item.id}>
+                                      <div className="icon">
+                                                    <img src={item.icon} alt="" />
+                                        </div>
+                                        <h3>{item.title}</h3>
+                                         <div className="service-texts">
+                                                    <p>{item.content}</p>
+                                         </div>
+                                        <span onClick={() => openService(item.id)}><IoIosArrowRoundDown /></span>
+                             </div>
+                           )}
+                   </div>
+                      }
 
                         <div className="process-row">
                                   <div className="process-texts">

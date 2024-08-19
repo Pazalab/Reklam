@@ -13,7 +13,7 @@ const ContactSection = () => {
                                                     </div>
                                                     <div className="contact-text-column">
                                                                 <p data-aos="zoom-in-left">Phone: +254 700 209805</p>
-                                                                <p data-aos="zoom-in-left">Email: helllo@reklamsolutions.com</p>
+                                                                <p data-aos="zoom-in-left">Email: hello@reklamsolutions.com</p>
                                                     </div>
                                        </div>
                           </div>
