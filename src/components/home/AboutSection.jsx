@@ -1,4 +1,5 @@
-
+import { Link } from "react-router-dom"
+import { BsArrowRight } from "react-icons/bs";
 
 const AboutSection = () => {
   return (
@@ -14,11 +15,12 @@ const AboutSection = () => {
                                               <div className="about-description-texts">
                                                            <h3 data-aos='zoom-in-left'>We use <span>Design</span>, <span>Technology</span>, and <span>marketing</span> to shape Digital Brand Experiences that propel your success in the digital realm.</h3>
                                                            <p data-aos="zoom-in-left">At Reklam Solutions, We are a boutique, modern consultancy committed to transforming visions into reality. With a dynamic team of creative thinkers, strategic planners, and digital innovators, we blend artistry and strategy to deliver bespoke solutions for businesses and international development partners alike. Our passion for excellence and dedication to client success drive us to go above and beyond, ensuring each project we undertake is a masterpiece in its own right.</p>
-                                                           <p data-aos='zoom-in-left'>Our passionate experts leverage cutting-edge technology to fuel your unique journey. We believe in transparency and relentless dedication – your success is our greatest reward.</p>
+                                                           {/* <p data-aos='zoom-in-left'>Our passionate experts leverage cutting-edge technology to fuel your unique journey. We believe in transparency and relentless dedication – your success is our greatest reward.</p> */}
+                                                           <Link to={"/about-us"}>More About Us <span><BsArrowRight /></span></Link>
                                               </div>
                                    </div>
 
-                                   <div className="numbers-row" data-aos="zoom-in-up">
+                                   {/* <div className="numbers-row" data-aos="zoom-in-up">
                                               <div className="number-moja">
                                                        <h1>50<sup>+</sup></h1>
                                                        <p>Projects Completed</p>
@@ -35,7 +37,7 @@ const AboutSection = () => {
                                                         <h1>10k</h1>
                                                         <p>Lives impacted</p>
                                               </div>
-                                   </div>
+                                   </div> */}
                         </div>
               </div>
     </div>
