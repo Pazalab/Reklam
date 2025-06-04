@@ -78,6 +78,10 @@ const PortfolioSection = () => {
                                                    </div>
                                           </div>
                                  </div>
+
+                                 <div className="portfolio-btn">
+                                           <Link to={"/our-work"}>Explore Portfolio <span><HiOutlineArrowUpRight /></span></Link>
+                                 </div>
                        </div>
             </div>
     </div>

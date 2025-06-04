@@ -5,6 +5,10 @@ import Lenis from "@studio-freight/lenis"
 import { useLayoutEffect, useEffect } from 'react'
 import Aos from "aos"
 import 'aos/dist/aos.css'
+import About from './pages/About'
+import Services from './pages/Services'
+import Work from './pages/Work'
+import Contact from './pages/Contact'
 
 function App() {
   const location = useLocation();
@@ -31,6 +35,10 @@ useLayoutEffect(() => {
   return (
     <Routes>
              <Route path='/' element={<Home />} />
+             <Route path='/about-us' element={<About />} />
+             <Route path='/services' element={<Services />} />
+             <Route path='/our-work' element={<Work />} />
+             <Route path='/contact-us' element={<Contact />} />
     </Routes>
   )
 }

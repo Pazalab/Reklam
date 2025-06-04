@@ -52,7 +52,10 @@ img{
      width: 1250px;
      margin: auto;
 }
-
+.inner-row-2{
+       width: 90%;
+       margin: auto;
+}
 .logo{
      width: 200px;
      display: block;
@@ -66,21 +69,21 @@ img{
 
 .header-content ul{
      display: flex;
-     gap: 50px;
+     gap: 40px;
 }
 .header-content ul li a,
 .sidebar-content ul li a{
       cursor: pointer;
       position: relative;
       display: inline-flex;
-      padding-bottom: 10px;
+      padding-bottom: 8px;
+      color: #222;
 }
 .header-content ul li a:hover,
 .header-content ul li a.active,
 .sidebar-content ul li a:hover,
 .sidebar-content ul li a.active{
      color: var(--main-color);
-
 }
 
 .header-content ul li a::after,
@@ -118,6 +121,7 @@ img{
      justify-content: center;
      height: 50px;
      cursor: pointer;
+     font-size: 16px;
      color: whitesmoke;
      background: var(--main-color);
 }
