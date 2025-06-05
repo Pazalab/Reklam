@@ -28,7 +28,8 @@
 
 .about-hero-texts h3{
        font-weight: 450;;
-       font-size: 16px;
+       font-size: 18px;
+       text-transform: uppercase;
        color: var(--secondary-color);
 }
 

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef } from "react"
 import { CgClose } from "react-icons/cg"
-import { Link } from "react-scroll"
+import { Link, NavLink } from "react-router-dom"
 import { sidebarContext } from "./navcontext"
 import gsap from "gsap";
 
@@ -29,15 +29,18 @@ const Sidebar = () => {
   return (
      <div ref={sidebarRef} className="sidebar-section">
                  <div className="sidebar-content">
-                            <span onClick={() => setSidebarStatus(false)}><CgClose /></span>
+                            <div className="sidebar-header">
+                                    <span onClick={() => setSidebarStatus(false)}><CgClose /></span>
+                            </div>
                             <ul>
-                                   <li><Link to="hero" offset={-100} smooth={true} activeClass="active" spy={true}>Home</Link></li>
-                                   <li><Link to='about' activeClass="active" smooth={true} spy={true}>About Us</Link></li>
-                                   <li><Link to='services' activeClass="active" smooth={true} spy={true}>Services</Link></li>
+                                   <li><NavLink to="/">Home</NavLink></li>
+                                   <li><NavLink to={"/about-us"}>About Us</NavLink></li>
+                                   <li><NavLink to={"/services"}>Services</NavLink></li>
+                                   <li><NavLink to={"/our-work"}>Work</NavLink></li>
                             </ul>
 
                             <div className="sidebar-action">
-                                       <Link to='contact' activeClass="active"  smooth={true} spy={true}>Get in Touch</Link>
+                                       <Link to={"/contact-us"}>Get in Touch</Link>
                             </div>
                  </div>
      </div>

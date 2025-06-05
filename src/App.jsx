@@ -9,6 +9,7 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Work from './pages/Work'
 import Contact from './pages/Contact'
+import Eccentric from './pages/Eccentric'
 
 function App() {
   const location = useLocation();
@@ -39,6 +40,7 @@ useLayoutEffect(() => {
              <Route path='/services' element={<Services />} />
              <Route path='/our-work' element={<Work />} />
              <Route path='/contact-us' element={<Contact />} />
+             <Route path="/eccentric" element={<Eccentric />} />
     </Routes>
   )
 }

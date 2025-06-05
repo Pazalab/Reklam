@@ -8,9 +8,10 @@
       align-items: center;
 }
 .service-left-column h3{
-      font-size: 20px;
-      font-weight: 500;
-      color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 450;
+    font-size: 18px;
+    color: var(--secondary-color);
 }
 
 .service-left-column h2{
