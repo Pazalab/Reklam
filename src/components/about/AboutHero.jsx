@@ -11,7 +11,7 @@ const AboutHero = () => {
                                            <div className="about-texts-group" data-aos="zoom-in-left">
                                                     <h3>Who We Are</h3>
                                                    <h1>Redefining Digital Experiences Through Bold Storytelling and Smart Communication.</h1>
-                                                   <p>We are a boutique agency based in Nairobi, Kenya,  empowering brands—big and small—to unlock the magic of digital. We harness smart strategies and creative insights to turn digital potential into powerful tools for growth, helping your business work smarter and stand out</p>
+                                                   <p>We are a boutique agency based in Nairobi, Kenya,  empowering brands, big and small to unlock the magic of digital. We harness smart strategies and creative insights to turn digital potential into powerful tools for growth, helping your business work smarter and stand out</p>
                                            </div>
                                   </div>
                          </div>

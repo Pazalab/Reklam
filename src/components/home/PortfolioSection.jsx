@@ -16,7 +16,7 @@ const PortfolioSection = () => {
                                           <h2>Our Featured Work</h2>
                                           <div className="portfolio-intro-column">
                                                     <h3>Helping brands look sharper, smarter, and seriously better.</h3>
-                                                    <p>Let&apos;s be real—your online presence is often your first handshake. Why waste it with forgettable design? The brands that truly stand out are the ones bold enough to break the mold and push creative boundaries.</p>
+                                                    <p>Let&apos;s be real, your online presence is often your first handshake. Why waste it with forgettable design? The brands that truly stand out are the ones bold enough to break the mold and push creative boundaries.</p>
                                           </div>
                                  </div>
 

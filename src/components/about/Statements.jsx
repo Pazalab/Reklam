@@ -11,11 +11,11 @@ const Statements = () => {
                                   <div className="statements-column">
                                              <div className="statement-text" data-aos="zoom-in">
                                                        <h3>our Mission</h3>
-                                                       <p>To amplify bold ideas and purposeful stories through creative, tech-driven communication—empowering brands to spark change, drive impact, and build lasting connections.</p>
+                                                       <p>To amplify bold ideas and purposeful stories through creative, tech-driven communication; empowering brands to spark change, drive impact, and build lasting connections.</p>
                                              </div>
                                              <div className="statement-text" data-aos="zoom-in">
                                                         <h3>Our Vision</h3>
-                                                        <p>To be the leading creative partner for brands and changemakers, redefining how stories are told and experienced in the digital age—across Africa and beyond.</p>
+                                                        <p>To be the leading creative partner for brands and changemakers, redefining how stories are told and experienced in the digital age across Africa and beyond.</p>
                                              </div>
                                   </div>
                         </div>

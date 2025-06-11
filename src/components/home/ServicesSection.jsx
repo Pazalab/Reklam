@@ -18,7 +18,7 @@ const ServicesSection = () => {
                         <div className="services-intro">
                                      <h3 data-aos="zoom-in-down">Our Services</h3>
                                      <h1 data-aos="zoom-in-up">What We Can Do for You</h1>
-                                     <p data-aos="zoom-in-up">Reklam is more than a digital consulting agency—we&apos;re your catalyst for growth. We craft impactful solutions that elevate brands and drive meaningful change through web design, digital consulting, strategic communication, and content creation. Our tailored services for SMEs, corporates, and international partners ensure optimal results and lasting impact. </p>
+                                     <p data-aos="zoom-in-up">Reklam is more than a digital consulting agency, we&apos;re your catalyst for growth. We craft impactful solutions that elevate brands and drive meaningful change through web design, digital consulting, strategic communication, and content creation. Our tailored services for SMEs, corporates, and international partners ensure optimal results and lasting impact. </p>
                         </div>
 
                         <div className="services-switches">

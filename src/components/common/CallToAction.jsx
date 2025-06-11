@@ -12,7 +12,7 @@ const CallToAction = () => {
              <div className="inner-row">
                       <div className="call-to-action-content">
                                <h2>Ready to unlock bold solutions? <br /> Let&apos;s make it happen.</h2>
-                               <p>Whether you&apos;re launching something new, growing what you&apos;ve built, or shaking up your strategy—our digital expertise helps you move smarter, faster, and bolder. We bring the tools, ideas, and energy to turn your vision into real results.</p>
+                               <p>Whether you&apos;re launching something new, growing what you&apos;ve built, or shaking up your strategy, our digital expertise helps you move smarter, faster, and bolder. We bring the tools, ideas, and energy to turn your vision into real results.</p>
                                <Link to={"/contact-us"}>Get Started <span><BsArrowRight /></span></Link>
                       </div>
                       
