@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom"
-import mno from "../../assets/portfolio/mno.jpg"
-import kkco from "../../assets/portfolio/kkco.jpg"
-import holistic from "../../assets/portfolio/holistic.jpg"
-import dum1 from "../../assets/portfolio/dum13.jpeg"
-import dum2 from "../../assets/portfolio/dum12.jpeg"
-import dum3 from "../../assets/portfolio/dum14.png"
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
+import { portfolio } from "../data/portfolio"
+import { HiMiniLink } from "react-icons/hi2";
 
 const PortfolioSection = () => {
   return (
@@ -19,65 +15,22 @@ const PortfolioSection = () => {
                                                     <p>Let&apos;s be real, your online presence is often your first handshake. Why waste it with forgettable design? The brands that truly stand out are the ones bold enough to break the mold and push creative boundaries.</p>
                                           </div>
                                  </div>
+                                    
+                                  <div className="portfolio-wrap-row">
+                                            { portfolio.slice(0,9).map(item => 
+                                                    <div className="portfolio-moja" key={item.id}>
+                                                               <div className={ item.category === "websites" ? "image-section plus-link" : "image-section"}>
+                                                                             <img src={item.image} alt="" />
 
-                                 <div className="portfolio-wrap-row">
-                                          <div className="portfolio-moja">
-                                                   <div className="image-section">
-                                                            <img src={mno} alt="" />
-                                                   </div>
-                                                   <div className="portfolio-texts">
-                                                         <h4>MNO Legal Advocates</h4>
-
-                                                            <Link to={""} target="_blank">View project <span><HiOutlineArrowUpRight /></span></Link>
-                                                   </div>
-                                          </div>
-                                           <div className="portfolio-moja">
-                                                   <div className="image-section">
-                                                          <img src={kkco} alt="" />
-                                                   </div>
-                                                   <div className="portfolio-texts">
-                                                            <h4>KKCO East africa LLP</h4>
-                                                            <Link to={""} target="_blank">View project <span><HiOutlineArrowUpRight /></span></Link>
-                                                   </div>
-                                          </div>
-                                           <div className="portfolio-moja">
-                                                   <div className="image-section">
-                                                          <img src={holistic} alt="" />
-                                                   </div>
-                                                   <div className="portfolio-texts">
-                                                            <h4>Holistic Weight Management Center</h4>
-                                                            <Link to={""} target="_blank">View project <span><HiOutlineArrowUpRight /></span></Link>
-                                                   </div>
-                                          </div>
-                                          <div className="portfolio-moja">
-                                                   <div className="image-section">
-                                                          <img src={dum1} alt="" />
-                                                   </div>
-                                                   <div className="portfolio-texts">
-                                                             <h4>MNO Legal Advocates</h4>
-                                                            <Link to={""} target="_blank">View project <span><HiOutlineArrowUpRight /></span></Link>
-                                                   </div>
-                                          </div>
-                                          <div className="portfolio-moja">
-                                                   <div className="image-section">
-                                                          <img src={dum2} alt="" />
-                                                   </div>
-                                                   <div className="portfolio-texts">
-                                                            <h4>MNO Legal Advocates</h4>
-                                                            <Link to={""} target="_blank">View project <span><HiOutlineArrowUpRight /></span></Link>
-                                                   </div>
-                                          </div>
-                                          <div className="portfolio-moja">
-                                                   <div className="image-section">
-                                                          <img src={dum3} alt="" />
-                                                   </div>
-                                                   <div className="portfolio-texts">
-                                                            <h4>MNO Legal Advocates</h4>
-
-                                                          <Link to={""} target="_blank">View project <span><HiOutlineArrowUpRight /></span></Link>
-                                                   </div>
-                                          </div>
-                                 </div>
+                                                                             { item.category === "websites" && 
+                                                                                  <Link target="_blank" to={item.link} className="portfolio-overlay">
+                                                                                          <span><HiMiniLink /></span>
+                                                                                 </Link>
+                                                                              }
+                                                               </div>
+                                                    </div>
+                                            )}
+                                  </div>
 
                                  <div className="portfolio-btn">
                                            <Link to={"/our-work"}>Explore Portfolio <span><HiOutlineArrowUpRight /></span></Link>

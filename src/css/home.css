@@ -224,15 +224,43 @@
 
 .portfolio-wrap-row{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin-top: 50px;
-        gap: 40px;
+        gap: 20px;
 }
 
 .portfolio-moja .image-section{
-       height: 450px;
-       padding: 30px;
-       background: white;
+        position: relative;
+}
+
+.image-section .portfolio-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background: #f7921e7b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        opacity: 0;
+        transition: all 0.8s ease;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+}
+.portfolio-moja:hover .image-section .portfolio-overlay{
+        opacity: 1;
+}
+.image-section .portfolio-overlay span{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        background: #ec8c1e47;
+        justify-content: center;
+        color: white;
 }
 .portfolio-moja img{
         display: block;

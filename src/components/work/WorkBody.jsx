@@ -1,12 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import mno from "../../assets/portfolio/mno.jpg"
-import kkco from "../../assets/portfolio/kkco.jpg"
-import holistic from "../../assets/portfolio/holistic.jpg"
-import dum1 from "../../assets/portfolio/dum13.jpeg"
-import dum2 from "../../assets/portfolio/dum12.jpeg"
-import dum3 from "../../assets/portfolio/dum14.png"
-import { HiOutlineArrowUpRight } from "react-icons/hi2";
+import { HiMiniLink } from "react-icons/hi2";
+import { portfolio } from "../data/portfolio"
 
 const WorkBody = () => {
     const [ option, setOption ] = useState("All")
@@ -23,63 +18,41 @@ const WorkBody = () => {
                                 </div>
                                 
                                 <div className="portfolio-wrap-row">
-                                         <div className="portfolio-moja">
-                                               <div className="image-section">
-                                                        <img src={mno} alt="" />
-                                               </div>
-                                               <div className="portfolio-texts">
-                                                     <h4>MNO Legal Advocates</h4>
-                                
-                                                        <Link to={""} target="_blank">View project <span><HiOutlineArrowUpRight /></span></Link>
-                                                </div>
-                                        </div>
-                                        <div className="portfolio-moja">
-                                                <div className="image-section">
-                                                      <img src={kkco} alt="" />
-                                               </div>
-                                                <div className="portfolio-texts">
-                                                       <h4>KKCO East africa LLP</h4>
-                                                       <Link to={""} target="_blank">View project <span><HiOutlineArrowUpRight /></span></Link>
-                                              </div>
-                                      </div>
-                                      <div className="portfolio-moja">
-                                              <div className="image-section">
-                                                    <img src={holistic} alt="" />
-                                               </div>
-                                              <div className="portfolio-texts">
-                                                       <h4>Holistic Weight Management Center</h4>
-                                                       <Link to={""} target="_blank">View project <span><HiOutlineArrowUpRight /></span></Link>
-                                              </div>
-                                     </div>
-                                      <div className="portfolio-moja">
-                                              <div className="image-section">
-                                                      <img src={dum1} alt="" />
-                                              </div>
-                                              <div className="portfolio-texts">
-                                                      <h4>MNO Legal Advocates</h4>
-                                                     <Link to={""} target="_blank">View project <span><HiOutlineArrowUpRight /></span></Link>
-                                              </div>
-                                      </div>
-                                    <div className="portfolio-moja">
-                                             <div className="image-section">
-                                                   <img src={dum2} alt="" />
-                                             </div>
-                                              <div className="portfolio-texts">
-                                                    <h4>MNO Legal Advocates</h4>
-                                                       <Link to={""} target="_blank">View project <span><HiOutlineArrowUpRight /></span></Link>
-                                           </div>
-                                  </div>
-                                 <div className="portfolio-moja">
-                                          <div className="image-section">
-                                                <img src={dum3} alt="" />
-                                          </div>
-                                          <div className="portfolio-texts">
-                                                  <h4>MNO Legal Advocates</h4>
-                                
-                                                <Link to={""} target="_blank">View project <span><HiOutlineArrowUpRight /></span></Link>
-                                          </div>
+                                           { option === "All" ?
+                                                 portfolio.map(item => 
+                                                        <div className="portfolio-moja" key={item.id}>
+                                                               <div className={ item.category === "websites" ? "image-section plus-link" : "image-section"}>
+                                                                         <img src={item.image} alt="" /> 
+                                                                          { item.category === "websites" && 
+                                                                              <Link target="_blank" to={item.link} className="portfolio-overlay">
+                                                                                      <span><HiMiniLink /></span>
+                                                                              </Link>
+                                                                          }
+                                                              </div>
+                                                      </div>
+                                                 ) :
+                                                 option === "Graphic Design" ?
+                                                 portfolio.filter(item => item.category === "graphics").map(kitu => 
+                                                        <div className="portfolio-moja" key={kitu.id}>
+                                                                <div className={"image-section"}>
+                                                                       <img src={kitu.image} alt="" />
+                                                               </div>
+                                                        </div>
+                                                 ) :
+                                                option === "Website Development" ?
+                                                portfolio.filter(kitu => kitu.category === "websites").map(item => 
+                                                        <div className="portfolio-moja" key={item.id}>
+                                                               <div className={"image-section"}>
+                                                                       <img src={item.image} alt="" />
+                                                                       <Link target="_blank" to={item.link} className="portfolio-overlay">
+                                                                              <span><HiMiniLink /></span>
+                                                                       </Link>
+                                                              </div>
+                                                       </div>
+                                                ) :
+                                                 "What is"
+                                           }
                               </div>
-                     </div>
                  </div>
              </div>
     </div>
